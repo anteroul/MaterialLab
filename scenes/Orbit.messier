@@ -1,0 +1,991 @@
+{
+  "format": "messier-scene",
+  "version": 1,
+  "settings": {
+    "ambientColor": [
+      0.55,
+      0.62,
+      0.75
+    ],
+    "ambientIntensity": 0.25,
+    "background": [
+      0.06,
+      0.062,
+      0.065
+    ],
+    "exposure": 1,
+    "shadowExtent": 16,
+    "sky": {
+      "mode": "gradient",
+      "top": [
+        0.03,
+        0.05,
+        0.12
+      ],
+      "horizon": [
+        0.3,
+        0.2,
+        0.16
+      ],
+      "ground": [
+        0.025,
+        0.022,
+        0.02
+      ],
+      "sunSize": 2,
+      "sunGlow": 0.5,
+      "intensity": 1,
+      "rotation": 0,
+      "lighting": 0.55
+    },
+    "physics": {
+      "gravity": [
+        0,
+        -9.81,
+        0
+      ],
+      "iterations": 10
+    }
+  },
+  "objects": [
+    {
+      "name": "Lab",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "visible": true,
+      "castShadows": true,
+      "behaviours": [
+        {
+          "script": "Lab",
+          "enabled": true,
+          "overrides": {}
+        }
+      ]
+    },
+    {
+      "name": "Title",
+      "position": [
+        22,
+        -16,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "visible": true,
+      "castShadows": true,
+      "text2d": {
+        "space": "screen",
+        "anchor": "top-left",
+        "order": 0,
+        "text": "Material Lab · Orbit",
+        "fontSize": 24,
+        "fontFamily": "sans-serif",
+        "bold": true,
+        "color": [
+          1,
+          0.9,
+          0.7,
+          1
+        ],
+        "align": "left",
+        "verticalAlign": "top",
+        "lineHeight": 1.2,
+        "maxWidth": 0,
+        "outlineWidth": 2,
+        "outlineColor": [
+          0,
+          0,
+          0,
+          0.7
+        ]
+      }
+    },
+    {
+      "name": "Status",
+      "position": [
+        -22,
+        -18,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "visible": true,
+      "castShadows": true,
+      "text2d": {
+        "space": "screen",
+        "anchor": "top-right",
+        "order": 0,
+        "text": "Maps: on",
+        "fontSize": 18,
+        "fontFamily": "sans-serif",
+        "bold": false,
+        "color": [
+          0.75,
+          0.95,
+          1,
+          1
+        ],
+        "align": "right",
+        "verticalAlign": "top",
+        "lineHeight": 1.2,
+        "maxWidth": 0,
+        "outlineWidth": 2,
+        "outlineColor": [
+          0,
+          0,
+          0,
+          0.7
+        ]
+      }
+    },
+    {
+      "name": "Controls",
+      "position": [
+        0,
+        12,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "visible": true,
+      "castShadows": true,
+      "text2d": {
+        "space": "screen",
+        "anchor": "bottom",
+        "order": 0,
+        "text": "Space: maps on / off   N / P: next / previous scene",
+        "fontSize": 14,
+        "fontFamily": "sans-serif",
+        "bold": false,
+        "color": [
+          1,
+          1,
+          1,
+          0.85
+        ],
+        "align": "center",
+        "verticalAlign": "bottom",
+        "lineHeight": 1.2,
+        "maxWidth": 0,
+        "outlineWidth": 2,
+        "outlineColor": [
+          0,
+          0,
+          0,
+          0.7
+        ]
+      }
+    },
+    {
+      "name": "Platform",
+      "position": [
+        0,
+        -0.15,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "visible": true,
+      "castShadows": true,
+      "mesh": {
+        "primitive": "cylinder",
+        "args": [
+          6,
+          0.3,
+          64
+        ]
+      },
+      "material": {
+        "name": "Platform",
+        "baseColor": [
+          0.06,
+          0.06,
+          0.07,
+          1
+        ],
+        "metallic": 1,
+        "roughness": 0.45,
+        "emissive": [
+          0,
+          0,
+          0
+        ],
+        "emissiveStrength": 1,
+        "normalScale": 1,
+        "occlusionStrength": 1,
+        "alphaCutoff": 0,
+        "doubleSided": false,
+        "unlit": false
+      }
+    },
+    {
+      "name": "Hull Sphere",
+      "position": [
+        0,
+        1.9,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        3,
+        3
+      ],
+      "visible": true,
+      "castShadows": true,
+      "mesh": {
+        "asset": "material-lab",
+        "index": 5
+      },
+      "material": {
+        "name": "Hull Plating",
+        "baseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallic": 1,
+        "roughness": 1,
+        "emissive": [
+          1,
+          1,
+          1
+        ],
+        "emissiveStrength": 2.5,
+        "normalScale": 1,
+        "occlusionStrength": 1,
+        "alphaCutoff": 0,
+        "doubleSided": false,
+        "unlit": false,
+        "texture": {
+          "asset": "material-lab",
+          "index": 1
+        },
+        "normalTexture": {
+          "asset": "material-lab",
+          "index": 5
+        },
+        "metallicRoughnessTexture": {
+          "asset": "material-lab",
+          "index": 6
+        },
+        "occlusionTexture": {
+          "asset": "material-lab",
+          "index": 6
+        },
+        "emissiveTexture": {
+          "asset": "material-lab",
+          "index": 7
+        }
+      },
+      "behaviours": [
+        {
+          "script": "Spin",
+          "enabled": true,
+          "overrides": {
+            "speed": 6,
+            "tilt": 14
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ring",
+      "position": [
+        0,
+        1.9,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "visible": true,
+      "castShadows": true,
+      "behaviours": [
+        {
+          "script": "Spin",
+          "enabled": true,
+          "overrides": {
+            "speed": 10,
+            "tilt": 8
+          }
+        }
+      ],
+      "children": [
+        {
+          "name": "Cube 1",
+          "position": [
+            3.1,
+            0,
+            0
+          ],
+          "rotation": [
+            0.16561121050749114,
+            -0.05221701409779435,
+            0.29613740272754274,
+            0.939227847276016
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "visible": true,
+          "castShadows": true,
+          "mesh": {
+            "asset": "material-lab",
+            "index": 0
+          },
+          "material": {
+            "name": "Stage 5 Emissive",
+            "baseColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "emissive": [
+              1,
+              1,
+              1
+            ],
+            "emissiveStrength": 2,
+            "normalScale": 1,
+            "occlusionStrength": 1,
+            "alphaCutoff": 0,
+            "doubleSided": false,
+            "unlit": false,
+            "texture": {
+              "asset": "material-lab",
+              "index": 0
+            },
+            "normalTexture": {
+              "asset": "material-lab",
+              "index": 2
+            },
+            "metallicRoughnessTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "occlusionTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "emissiveTexture": {
+              "asset": "material-lab",
+              "index": 4
+            }
+          }
+        },
+        {
+          "name": "Cube 2",
+          "position": [
+            2.1920310216782974,
+            0,
+            2.192031021678297
+          ],
+          "rotation": [
+            0.03967793001483026,
+            -0.4076691669422657,
+            0.2102186187158847,
+            0.8877159706457481
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "visible": true,
+          "castShadows": true,
+          "mesh": {
+            "asset": "material-lab",
+            "index": 0
+          },
+          "material": {
+            "name": "Stage 5 Emissive",
+            "baseColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "emissive": [
+              1,
+              1,
+              1
+            ],
+            "emissiveStrength": 2,
+            "normalScale": 1,
+            "occlusionStrength": 1,
+            "alphaCutoff": 0,
+            "doubleSided": false,
+            "unlit": false,
+            "texture": {
+              "asset": "material-lab",
+              "index": 0
+            },
+            "normalTexture": {
+              "asset": "material-lab",
+              "index": 2
+            },
+            "metallicRoughnessTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "occlusionTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "emissiveTexture": {
+              "asset": "material-lab",
+              "index": 4
+            }
+          }
+        },
+        {
+          "name": "Cube 3",
+          "position": [
+            1.8982025386783975e-16,
+            0,
+            3.1
+          ],
+          "rotation": [
+            -0.09229595564125723,
+            -0.7010573846499778,
+            0.09229595564125728,
+            0.7010573846499779
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "visible": true,
+          "castShadows": true,
+          "mesh": {
+            "asset": "material-lab",
+            "index": 0
+          },
+          "material": {
+            "name": "Stage 5 Emissive",
+            "baseColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "emissive": [
+              1,
+              1,
+              1
+            ],
+            "emissiveStrength": 2,
+            "normalScale": 1,
+            "occlusionStrength": 1,
+            "alphaCutoff": 0,
+            "doubleSided": false,
+            "unlit": false,
+            "texture": {
+              "asset": "material-lab",
+              "index": 0
+            },
+            "normalTexture": {
+              "asset": "material-lab",
+              "index": 2
+            },
+            "metallicRoughnessTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "occlusionTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "emissiveTexture": {
+              "asset": "material-lab",
+              "index": 4
+            }
+          }
+        },
+        {
+          "name": "Cube 4",
+          "position": [
+            -2.192031021678297,
+            0,
+            2.1920310216782974
+          ],
+          "rotation": [
+            -0.21021861871588468,
+            -0.8877159706457481,
+            -0.03967793001483025,
+            0.40766916694226574
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "visible": true,
+          "castShadows": true,
+          "mesh": {
+            "asset": "material-lab",
+            "index": 0
+          },
+          "material": {
+            "name": "Stage 5 Emissive",
+            "baseColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "emissive": [
+              1,
+              1,
+              1
+            ],
+            "emissiveStrength": 2,
+            "normalScale": 1,
+            "occlusionStrength": 1,
+            "alphaCutoff": 0,
+            "doubleSided": false,
+            "unlit": false,
+            "texture": {
+              "asset": "material-lab",
+              "index": 0
+            },
+            "normalTexture": {
+              "asset": "material-lab",
+              "index": 2
+            },
+            "metallicRoughnessTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "occlusionTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "emissiveTexture": {
+              "asset": "material-lab",
+              "index": 4
+            }
+          }
+        },
+        {
+          "name": "Cube 5",
+          "position": [
+            -3.1,
+            0,
+            3.796405077356795e-16
+          ],
+          "rotation": [
+            -0.29613740272754274,
+            -0.939227847276016,
+            -0.1656112105074911,
+            0.052217014097794404
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "visible": true,
+          "castShadows": true,
+          "mesh": {
+            "asset": "material-lab",
+            "index": 0
+          },
+          "material": {
+            "name": "Stage 5 Emissive",
+            "baseColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "emissive": [
+              1,
+              1,
+              1
+            ],
+            "emissiveStrength": 2,
+            "normalScale": 1,
+            "occlusionStrength": 1,
+            "alphaCutoff": 0,
+            "doubleSided": false,
+            "unlit": false,
+            "texture": {
+              "asset": "material-lab",
+              "index": 0
+            },
+            "normalTexture": {
+              "asset": "material-lab",
+              "index": 2
+            },
+            "metallicRoughnessTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "occlusionTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "emissiveTexture": {
+              "asset": "material-lab",
+              "index": 4
+            }
+          }
+        },
+        {
+          "name": "Cube 6",
+          "position": [
+            -2.192031021678298,
+            0,
+            -2.192031021678297
+          ],
+          "rotation": [
+            -0.33697195166617294,
+            -0.8477507982801477,
+            -0.26633168546974817,
+            -0.3111847057946546
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "visible": true,
+          "castShadows": true,
+          "mesh": {
+            "asset": "material-lab",
+            "index": 0
+          },
+          "material": {
+            "name": "Stage 5 Emissive",
+            "baseColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "emissive": [
+              1,
+              1,
+              1
+            ],
+            "emissiveStrength": 2,
+            "normalScale": 1,
+            "occlusionStrength": 1,
+            "alphaCutoff": 0,
+            "doubleSided": false,
+            "unlit": false,
+            "texture": {
+              "asset": "material-lab",
+              "index": 0
+            },
+            "normalTexture": {
+              "asset": "material-lab",
+              "index": 2
+            },
+            "metallicRoughnessTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "occlusionTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "emissiveTexture": {
+              "asset": "material-lab",
+              "index": 4
+            }
+          }
+        },
+        {
+          "name": "Cube 7",
+          "position": [
+            -5.694607616035192e-16,
+            0,
+            -3.1
+          ],
+          "rotation": [
+            -0.3265055756219769,
+            -0.62721137512625,
+            -0.3265055756219769,
+            -0.6272113751262499
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "visible": true,
+          "castShadows": true,
+          "mesh": {
+            "asset": "material-lab",
+            "index": 0
+          },
+          "material": {
+            "name": "Stage 5 Emissive",
+            "baseColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "emissive": [
+              1,
+              1,
+              1
+            ],
+            "emissiveStrength": 2,
+            "normalScale": 1,
+            "occlusionStrength": 1,
+            "alphaCutoff": 0,
+            "doubleSided": false,
+            "unlit": false,
+            "texture": {
+              "asset": "material-lab",
+              "index": 0
+            },
+            "normalTexture": {
+              "asset": "material-lab",
+              "index": 2
+            },
+            "metallicRoughnessTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "occlusionTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "emissiveTexture": {
+              "asset": "material-lab",
+              "index": 4
+            }
+          }
+        },
+        {
+          "name": "Cube 8",
+          "position": [
+            2.192031021678297,
+            0,
+            -2.192031021678298
+          ],
+          "rotation": [
+            -0.2663316854697482,
+            -0.3111847057946548,
+            -0.336971951666173,
+            -0.8477507982801477
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "visible": true,
+          "castShadows": true,
+          "mesh": {
+            "asset": "material-lab",
+            "index": 0
+          },
+          "material": {
+            "name": "Stage 5 Emissive",
+            "baseColor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "emissive": [
+              1,
+              1,
+              1
+            ],
+            "emissiveStrength": 2,
+            "normalScale": 1,
+            "occlusionStrength": 1,
+            "alphaCutoff": 0,
+            "doubleSided": false,
+            "unlit": false,
+            "texture": {
+              "asset": "material-lab",
+              "index": 0
+            },
+            "normalTexture": {
+              "asset": "material-lab",
+              "index": 2
+            },
+            "metallicRoughnessTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "occlusionTexture": {
+              "asset": "material-lab",
+              "index": 3
+            },
+            "emissiveTexture": {
+              "asset": "material-lab",
+              "index": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sun",
+      "position": [
+        8,
+        6,
+        0
+      ],
+      "rotation": [
+        -0.16052892043019346,
+        0.6512604808488079,
+        0.14368025550118185,
+        0.7276305628333729
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "visible": true,
+      "castShadows": true,
+      "light": {
+        "type": "directional",
+        "color": [
+          1,
+          0.85,
+          0.7
+        ],
+        "intensity": 3,
+        "range": 12,
+        "innerAngle": 20,
+        "outerAngle": 30,
+        "castShadows": true
+      },
+      "behaviours": [
+        {
+          "script": "Orbit",
+          "enabled": true,
+          "overrides": {
+            "period": 24,
+            "elevation": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "Camera",
+      "position": [
+        0,
+        3.2,
+        8.6
+      ],
+      "rotation": [
+        -0.08623351091409354,
+        0,
+        0,
+        0.9962749528094283
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "visible": true,
+      "castShadows": true,
+      "camera": {
+        "projection": "perspective",
+        "fovDeg": 50,
+        "orthoSize": 5,
+        "near": 0.1,
+        "far": 200,
+        "priority": 0
+      }
+    }
+  ]
+}

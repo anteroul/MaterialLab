@@ -1,0 +1,19 @@
+{
+  "format": "messier-project-folder",
+  "version": 1,
+  "name": "Material Lab",
+  "startScene": "scenes/Gallery.messier",
+  "build": {
+    "title": "Messier Material Lab",
+    "scenes": [
+      {
+        "id": "scenes/Gallery.messier",
+        "enabled": true
+      },
+      {
+        "id": "scenes/Orbit.messier",
+        "enabled": true
+      }
+    ]
+  }
+}
