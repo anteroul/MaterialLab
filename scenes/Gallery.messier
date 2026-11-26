@@ -264,7 +264,8 @@
         "occlusionStrength": 1,
         "alphaCutoff": 0,
         "doubleSided": false,
-        "unlit": false
+        "unlit": false,
+        "blend": "opaque"
       }
     },
     {
@@ -333,6 +334,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -400,6 +402,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -467,6 +470,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -534,6 +538,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -601,6 +606,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -668,6 +674,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -735,6 +742,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -802,6 +810,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -869,6 +878,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -936,6 +946,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1003,6 +1014,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1070,6 +1082,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1137,6 +1150,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1204,6 +1218,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1271,6 +1286,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1338,6 +1354,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1405,6 +1422,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1472,6 +1490,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 1
@@ -1565,7 +1584,8 @@
             "occlusionStrength": 1,
             "alphaCutoff": 0,
             "doubleSided": false,
-            "unlit": false
+            "unlit": false,
+            "blend": "opaque"
           }
         },
         {
@@ -1613,6 +1633,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -1664,6 +1685,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -1798,7 +1820,8 @@
             "occlusionStrength": 1,
             "alphaCutoff": 0,
             "doubleSided": false,
-            "unlit": false
+            "unlit": false,
+            "blend": "opaque"
           }
         },
         {
@@ -1846,6 +1869,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -1901,6 +1925,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -2039,7 +2064,8 @@
             "occlusionStrength": 1,
             "alphaCutoff": 0,
             "doubleSided": false,
-            "unlit": false
+            "unlit": false,
+            "blend": "opaque"
           }
         },
         {
@@ -2087,6 +2113,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -2146,6 +2173,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -2288,7 +2316,8 @@
             "occlusionStrength": 1,
             "alphaCutoff": 0,
             "doubleSided": false,
-            "unlit": false
+            "unlit": false,
+            "blend": "opaque"
           }
         },
         {
@@ -2336,6 +2365,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -2399,6 +2429,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -2545,7 +2576,8 @@
             "occlusionStrength": 1,
             "alphaCutoff": 0,
             "doubleSided": false,
-            "unlit": false
+            "unlit": false,
+            "blend": "opaque"
           }
         },
         {
@@ -2593,6 +2625,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -2660,6 +2693,7 @@
             "alphaCutoff": 0,
             "doubleSided": false,
             "unlit": false,
+            "blend": "opaque",
             "baseColorTexture": {
               "asset": "material-lab",
               "index": 0
@@ -2834,7 +2868,8 @@
             "occlusionStrength": 1,
             "alphaCutoff": 0,
             "doubleSided": false,
-            "unlit": true
+            "unlit": true,
+            "blend": "opaque"
           }
         },
         {
